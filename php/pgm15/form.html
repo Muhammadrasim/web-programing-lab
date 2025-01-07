@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+background-color:lightblue;
+}
+tr,td,th{
+padding:30px;
+}
+</style>
+</head>
+<body>
+<div style="display: flex; justify-content: center; align-items: center; height:
+100vh; flex-direction: column;">
+
+<h2>Registration Form</h2>
+<form action="registration.php" method="POST">
+<table border="2" >
+
+<tr>
+<th><label for="username">Username:</label></th>
+<td><input type="text" id="username" name="username"
+required></td>
+</tr>
+<tr>
+<th><label for="email">Email:</label></th>
+<td><input type="email" id="email" name="email" required></td>
+</tr>
+<tr>
+<th><label for="password">Password:</label></th>
+<td><input type="password" id="password" name="password"
+required></td>
+</tr>
+<tr>
+<th><label for="confirm_password">Confirm Password:</label></th>
+<td><input type="password" id="confirm_password"
+name="confirm_password" required></td>
+</tr>
+</table>
+<br>
+<input type="submit" value="Register">
+</form>
+</div>
+</body>
+</html>
