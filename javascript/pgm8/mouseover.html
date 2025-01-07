@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Multiple Event Listeners</title>
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+
+    #myButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #message {
+      margin: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 25px;
+  
+    
+      max-width: 350px;
+      border: 2px solid red;
+      box-sizing: border-box;
+      background-color: #f4f4f9;
+
+
+    }
+
+  </style>
+</head>
+<body>
+
+<center>
+
+  <button id="myButton">Click or Hover over Me!</button>
+  <div id="message"></div>
+</center>
+
+
+  <script>
+    
+    const button = document.getElementById('myButton');
+    const messageDiv = document.getElementById('message');
+
+
+    button.addEventListener('click', function() {
+      messageDiv.innerHTML = 'Button clicked!';
+      messageDiv.style.color = 'green'; });
+
+
+    button.addEventListener('mouseover', function() {
+      messageDiv.innerHTML = 'Mouse is over the button!';
+      messageDiv.style.color = 'blue';});
+
+ 
+    button.addEventListener('mouseout', function() {
+      messageDiv.innerHTML = 'Mouse left the button!';
+      messageDiv.style.color = 'red';});
+
+
+    button.addEventListener('dblclick', function() {
+      messageDiv.innerHTML = 'Button double-clicked!';
+      messageDiv.style.color = 'purple';
+    });
+  </script>
+
+</body>
+</html>

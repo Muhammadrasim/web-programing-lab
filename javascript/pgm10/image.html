@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mouse Click Event - Change Image and Text</title>
+</head>
+
+<body>
+<center><h1>Click on the box to change image and text!</h1>
+<div id="hoverArea">
+<div id="currentContent">
+<img id="currentImage" src="image" alt="Current Image" width="300px" height="300px">
+<p>Click on the balloon change colour</p>
+</div>
+</div>
+
+</center>
+<script>
+const hoverArea = document.getElementById('hoverArea');
+const currentImage = document.getElementById('currentImage');
+const currentContent = document.getElementById('currentContent')
+const newImageSrc = "image2";
+const newText = "colour changed after clicking";
+hoverArea.addEventListener('click', () => {
+currentImage.src = newImageSrc;
+currentContent.querySelector('p').textContent = newText;
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

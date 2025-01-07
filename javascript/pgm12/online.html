@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Online Exam</title>
+<style>
+<style>
+body {
+font-family: sans-serif;
+text-align: center;
+background-color: linen;
+
+}
+
+h1 {
+color: darkblue;
+margin-bottom: 80px;
+}
+
+.question {
+margin: 20px 0;
+
+text-align: left;
+}
+
+.question p {
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+button {
+padding: 20px;
+background-color: blue;
+color: white;
+}
+
+div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 30px;
+background-color: linen;
+
+border: 1px solid black;
+border-radius: 10px;
+max-width: 700px;
+margin: 30px auto;
+
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<h1>Online Exam</h1>
+
+<form id="examForm">
+<div class="question">
+<p>1. What does HTML stand for?</p>
+<label><input type="radio" name="q1" value="A"> Hyper Text Markup
+Language</label>
+<label><input type="radio" name="q1" value="B"> Home Tool Markup
+Language</label>
+<label><input type="radio" name="q1" value="C"> Hyperlinks and Text
+Markup Language</label>
+
+</div>
+
+<div class="question">
+<p>2. Which tag is used to display a picture in HTML?</p>
+<label><input type="radio" name="q2" value="A"> img</label>
+<label><input type="radio" name="q2" value="B"> image</label>
+<label><input type="radio" name="q2" value="C"> picture</label>
+</div>
+
+<div class="question">
+<p>3. Which CSS property is used to change the text color?</p>
+<label><input type="radio" name="q3" value="A"> color</label>
+<label><input type="radio" name="q3" value="B"> font-color</label>
+<label><input type="radio" name="q3" value="C"> text-color</label>
+</div>
+
+<div class="question">
+<p>4. Which JavaScript method is used to write text to the browser
+console?</p>
+<label><input type="radio" name="q4" value="A"> console.write()</label>
+<label><input type="radio" name="q4" value="B"> console.log()</label>
+<label><input type="radio" name="q4" value="C"> log.console()</label>
+</div>
+
+<button type="button" onclick="submitExam()">Submit Exam</button>
+</form>
+
+<div id="result"></div>
+
+</div>
+<script>
+function submitExam() {
+let score = 0;
+
+const correctAnswers = {
+q1: "A",
+q2: "A",
+q3: "A",
+q4: "B"
+};
+
+for (let question in correctAnswers) {
+const userAnswer =
+document.querySelector(`input[name="${question}"]:checked`);
+if (userAnswer && userAnswer.value === correctAnswers[question]) {
+score++;
+}
+}
+
+document.getElementById("result").innerHTML = `You scored ${score} out
+of 4.`;
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

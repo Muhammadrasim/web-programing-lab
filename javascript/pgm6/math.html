@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<title>JavaScript String and Math Functions</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+background-color: lightblue;
+}
+h1 {
+text-align: center;
+}
+.container {
+width: 600px;
+margin: 0 auto;
+padding: 30px;
+background-color: linen;
+border-radius: 20px;
+
+}
+.title {
+color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>JavaScript String and Math Functions</h1>
+<div class="container">
+<h2 class="title">String Methods</h2>
+<div>
+
+<p id="string-example">
+<p id="string-length">
+<p id="string-uppercase">
+<p id="string-lowercase">
+
+<p id="string-charAt">
+<p id="string-substring">
+
+<p id="string-replace">
+<p id="string-concat">
+</div>
+
+<h2 class="title">Math Methods</h2>
+<div>
+<p id="math-random">
+<p id="math-pi">
+<p id="math-sqrt">
+<p id="math-max">
+<p id="math-min">
+
+<p id="math-round">
+<p id="math-exp">
+<p id="math-floor">
+</div>
+</div>
+<script>
+// String methods
+const str = "Hello World!";
+document.getElementById("string-length").innerHTML = "length: "+ str.length;
+document.getElementById("string-uppercase").innerHTML = "uppercase: "+
+str.toUpperCase();
+document.getElementById("string-lowercase").innerHTML = "lowercase: "+
+str.toLowerCase();
+document.getElementById("string-charAt").innerHTML = "charecter at index 4"+
+str.charAt(4);
+document.getElementById("string-substring").innerHTML = "substring: "+
+str.substring(0, 5);
+document.getElementById("string-replace").innerHTML = "replace: "+
+str.replace("World", "JavaScript");
+document.getElementById("string-concat").innerHTML = "concatination: " +
+str.concat(" It's amazing!");
+// Math methods
+document.getElementById("math-random").innerHTML ="random number between 1
+and 0: "+ Math.random();
+document.getElementById("math-pi").innerHTML = "PI value: "+Math.PI;
+document.getElementById("math-sqrt").innerHTML = "root of 16: "+Math.sqrt(16);
+document.getElementById("math-max").innerHTML = "maximum number (10, 20, 5,
+15): "+ Math.max(10, 20, 5, 15);
+document.getElementById("math-min").innerHTML = "minimum number (10, 20, 5, 15):
+"+Math.min(10, 20, 5, 15);
+
+document.getElementById("math-round").innerHTML = "round of (4.7):
+
+"+Math.round(4.7);
+
+
+document.getElementById("math-exp").innerHTML = " exponent of 3: "+Math.exp(3);
+document.getElementById("math-floor").innerHTML = " floor of 10.5:
+"+Math.floor(10.5);
+
+</script>
+
+</body>
+</html>
+
+
+
