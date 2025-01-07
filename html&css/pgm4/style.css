@@ -1,0 +1,59 @@
+body {
+font-family: Arial, sans-serif;
+background-color: linen;
+
+}
+.wrapper {
+display: flex;
+height: 100vh;
+}
+
+.nav-frame {
+width: 10%;
+height: 100%;
+border: 3px ;
+background-color: grey;
+
+}
+
+
+.content-frame {
+flex-grow: 1;
+height: 100%;
+padding: 20px;
+}
+
+
+form input, form textarea {
+padding: 10px;
+width: 100%;
+margin: 10px ;
+}
+
+form input[type="submit"] {
+background-color: #3498db;
+border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
